@@ -1,10 +1,14 @@
 {
 	"TWITCHVERSION"		: "red",
 	"DB_DATABASE"		: "twitchplayspokemon",
+	"TPP_START_TIME"	: 1423771200,
 
 	"DB_HOST"			: "localhost",
 	"DB_USER"			: "root",
 	"DB_PASS"			: "",
+
+	"TPP_CACHE_KEY"		: "cache",
+	"TPP_DEBUG"			: false,
 
 	"IMG_PATH"			: "/img"
 }
