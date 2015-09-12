@@ -9,7 +9,7 @@ $this->render('milestone/_general'); ?>
  */
 $milestoneCount = 0;
 
-foreach(array_chunk($milestones, ceil(count($milestones) / 3)) as $milestones) { ?>
+foreach(array_chunk($milestones, max(1, ceil(count($milestones) / 3))) as $milestones) { ?>
 
 					<div class="col-md-4 col-pokemon-milestones">
 						<div class="table-responsive table-bordered table-striped table-pokemon table-milestones">

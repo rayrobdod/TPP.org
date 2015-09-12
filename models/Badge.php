@@ -26,6 +26,7 @@ class Badge extends Model {
 			GROUP_CONCAT(DISTINCT CONCAT_WS(':', bp.`pokemon`, bp.`level`) SEPARATOR ',') as `leader_pokemon`
 			FROM `badge` b JOIN `badge_pokemon` bp ON bp.`badge_id` = b.`id`" . $where . " GROUP BY b.`id` ORDER BY `order_id`, `id`" . $limit);
 		$obtained = 0;
+		$return = [];
 		while($badg = $getBadges->fetch_assoc()) {
 			$newBadge = new self();
 			$newBadge->setAttributes(array(
