@@ -1,5 +1,3 @@
-<?php
-foreach($items as $type => $items) { ?>
 
 				<div class="col-md-3">
 					<ul class="items">
@@ -15,5 +13,4 @@ foreach($items as $type => $items) { ?>
 	} ?>
 
 					</ul>
-				</div><?php
-}
+				</div>

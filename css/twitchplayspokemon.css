@@ -756,11 +756,11 @@ table.e4-moves td {
 	display: none;
 }
 
-.tpp-app-table-div {
+.tpp-app-table-div, .tpp-app-item-list {
 	display: flex;
 	flex-wrap: wrap;
 }
-.tpp-app-table-div > div {
+.tpp-app-table-div > div, .tpp-app-item-list > div {
 	flex-grow: 1;
 }
 .tpp-app-table-div > div > .nickname {

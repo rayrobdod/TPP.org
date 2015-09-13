@@ -1,14 +1,12 @@
 
 			<div class="tpp-app tpp-app-item tpp-app-hidden"><?php
-$this->render('item/_general', array('count' => count($items)));
+$this->render('item/_general', array('count' => count($items))); ?>
 
-$chunk = array_chunk($items, 4, true);
-foreach($chunk as $items) { ?>
+				<div class="tpp-app-item-list"> <?php
+foreach($items as $type => $column) {
 
-				<div class="row"><?php
-	$this->render('item/_item', array('items' => $items)); ?>
-
-				</div><?php
+	$this->render('item/_item', array('type' => $type, 'items' => $column));
 } ?>
+				</div>
 
 			</div>
