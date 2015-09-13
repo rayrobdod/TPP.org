@@ -755,3 +755,23 @@ table.e4-moves td {
 .tpp-app-hidden {
 	display: none;
 }
+
+.tpp-app-table-div {
+	display: flex;
+	flex-wrap: wrap;
+}
+.tpp-app-table-div > div {
+	flex-grow: 1;
+}
+.tpp-app-table-div > div > .nickname {
+	height: 4.5em;
+}
+.tpp-app-pokemon-party > .tpp-app-table-div > div {
+	min-width: 180px;
+}
+.tpp-app-pokemon-box > .tpp-app-table-div > div {
+	min-width: 120px;
+}
+.tpp-app-pokemon-daycare > .tpp-app-table-div > div {
+	min-width: 120px;
+}
