@@ -1,8 +1,5 @@
 
-					<tr><?php
-foreach($pokemon as $p) { ?>
-
-						<td class="valign-middle">Level <?= $p->level; ?><?php
+					<div class="valign-middle">Level <?= $p->level; ?><?php
 	if(isset($p->has_pokerus)) {
 		switch($p->has_pokerus) {
 			case 1:
@@ -21,8 +18,8 @@ foreach($pokemon as $p) { ?>
 			echo ' ';
 		}
 	
-		echo Image::toImage('/misc', 'pokerus' . $pokerusImg, array('data-content' => $pokerusTitle, 'class' => 'tpp-tooltip')); ?></td><?php
+		echo Image::toImage('/misc', 'pokerus' . $pokerusImg, array('data-content' => $pokerusTitle, 'class' => 'tpp-tooltip')); ?><?php
 	}
-} ?>
+?>
 
-					</tr>
+					</div>

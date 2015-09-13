@@ -1,10 +1,8 @@
-
-					<tr><?php
-foreach($pokemon as $p) {
+<?php
 	$size = isset($size) ? $size : null;
 ?>
 
-						<td class="no-padding">
+						<div class="no-padding">
 							<div class="padding8">
 								<p class="pokemon-img-container relative w<?= !is_null($size) ? $size : '150'; ?> h<?= !is_null($size) ? $size : '150'; ?>" data-identifier="<?= $p->id; ?>">
 									<?= $p->showImage(array(), $size);
@@ -12,7 +10,4 @@ foreach($pokemon as $p) {
 
 								</p>
 							</div>
-						</td><?php
-} ?>
-
-					</tr>
+						</div>

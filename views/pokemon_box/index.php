@@ -3,17 +3,18 @@
 $this->render('pokemon_box/_general', array('count' => count($pokemon))); ?>
 
 				<div class="table-responsive table-bordered table-pokemon pokemon-scrollable mtop20 tr-margin10">
-					<table class="table"><?php
-$chunk = array_chunk($pokemon, 6);
-foreach($chunk as $pokemon) {
-
-	$this->render('pokemon/_info', array('pokemon' => $pokemon));
-	$this->render('pokemon/_image', array('pokemon' => $pokemon, 'size' => 80));
-	$this->render('pokemon/_level', array('pokemon' => $pokemon));
-	$this->render('pokemon/_nickname', array('pokemon' => $pokemon));
-	$this->render('pokemon/_moves', array('pokemon' => $pokemon));
+					<div class="tpp-app-table-div"><?php
+foreach($pokemon as $p) { ?>
+						<div>
+<?php
+	$this->render('pokemon/_info', array('p' => $p));
+	$this->render('pokemon/_image', array('size' => 80, 'p' => $p));
+	$this->render('pokemon/_level', array('p' => $p));
+	$this->render('pokemon/_nickname', array('p' => $p));
+	$this->render('pokemon/_moves', array('p' => $p));
+?>
+						</div> <?php
 } ?>
-
-					</table>
+					</div>
 				</div>
 			</div>

@@ -1,8 +1,4 @@
-
-					<tr><?php
-foreach($pokemon as $p) { ?>
-
-						<td class="valign-middle">
+					<div class="valign-middle">
 							<ul class="pokemon-moves">
 								<li><em>Evolves:</em></li>
 								<li><?php
@@ -10,8 +6,4 @@ foreach($pokemon as $p) { ?>
 								?><?= isset($p->evolves_level) ? 'Lv. ' . $p->evolves_level : ''; ?><?php
 								} else { ?>-<?php } ?></li>
 							</ul>
-						</td><?php
-	
-} ?>
-
-					</tr>
+					</div>

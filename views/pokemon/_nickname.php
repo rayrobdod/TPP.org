@@ -1,9 +1,2 @@
 
-					<tr><?php
-foreach($pokemon as $p) { ?>
-
-						<td class="valign-middle"><?= $p->getNicknames(); ?></td><?php
-
-} ?>
-
-					</tr>
+					<div class="nickname valign-middle"><?= $p->getNicknames(); ?></div>

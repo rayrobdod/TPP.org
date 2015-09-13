@@ -228,23 +228,6 @@ $(function() {
 		$('.tpp-app').removeClass('tpp-app-hidden');
 	}
 
-	if($(window).width() <= 1400) {
-		$('#table-pokemon').after('<div class="tpp-app-table-div" id="tpp-app-table-div-pokemon"></div>');
-		for(var i = 1; i <= 6; i++) {
-			$('<div class="tpp-app-table-div-pokemon-pokemon-' + i + '"></div>').appendTo('#tpp-app-table-div-pokemon');
-		}
-		$('#table-pokemon tr').each(function() {
-			var k = 0;
-			$('td', $(this)).each(function() {
-				k++;
-				$(this).appendTo('.tpp-app-table-div-pokemon-pokemon-' + k);
-			});
-		});
-		
-		$('#tpp-app-table-div-pokemon td').each(function() {
-			$(this).changeElementType('div');
-		});
-	}
 	$('.tpp-app-nav a').on('click', function(e) {
 		e.preventDefault();
 		window.scrollTo(0,0);

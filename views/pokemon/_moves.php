@@ -1,8 +1,5 @@
 
-					<tr><?php
-foreach($pokemon as $p) { ?>
-
-						<td class="valign-middle">
+					<div class="valign-middle">
 							<ul class="pokemon-moves"><?php
 	if(isset($p->moves)) {
 		foreach($p->getMoves() as $move) {?>
@@ -12,7 +9,6 @@ foreach($pokemon as $p) { ?>
 	} ?>
 
 							</ul>
-						</td><?php
-} ?>
+						
 
-					</tr>
+					</div>
