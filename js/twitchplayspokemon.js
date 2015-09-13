@@ -224,10 +224,6 @@ $(function() {
 		$.post('timeline_click.php', {uniqid: $("#timeline-identifier").val()});
 	});
 
-	if($(window).width() > 1400) {
-		$('.tpp-app').removeClass('tpp-app-hidden');
-	}
-
 	$('.tpp-app-nav a').on('click', function(e) {
 		e.preventDefault();
 		window.scrollTo(0,0);

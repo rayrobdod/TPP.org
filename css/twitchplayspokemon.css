@@ -186,6 +186,10 @@ div.table-responsive.pokemon-scrollable {
 		padding: 0 10px;
 		text-align: justify;
 	}
+	
+	.tpp-app-hidden {
+		display: none;
+	}
 }
 
 .max-120 {
@@ -751,10 +755,6 @@ table.e4-moves td {
 }
 
 .tpp-app {}
-
-.tpp-app-hidden {
-	display: none;
-}
 
 .tpp-app-table-div, .tpp-app-item-list {
 	display: flex;
