@@ -763,6 +763,9 @@ table.e4-moves td {
 .tpp-app-table-div > div, .tpp-app-item-list > div {
 	flex-grow: 1;
 }
+.tpp-app-table-div > div > div, .tpp-app-item-list > div > div {
+	border-bottom: 1px solid #ddd;
+}
 .tpp-app-table-div > div > .nickname {
 	height: 4.5em;
 }
