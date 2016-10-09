@@ -20,19 +20,19 @@ See the source at https://github.com/Ma-ve/TPP.org and help us improve :D
 		<meta name="author" content="Mave">
 		<link rel="shortcut icon" href="favicon.ico?v2">
 
-		<title>TwitchPlaysPok&eacute;mon / Twitch Plays Pok&eacute;mon - Let's Get Organized!</title><?php
+		<title>Twitch Plays Pok&eacute;mon Prism - Let's Get Organized!</title><?php
 		if(TPP_DEBUG) { ?>
 
-		<link href="css/twitchplayspokemon.css" rel="stylesheet">
-		<link href="css/spritesheets.css" rel="stylesheet">
+		<link href="../css/twitchplayspokemon.css" rel="stylesheet">
+		<link href="../css/spritesheets.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-		<link href="css/font-awesome.min.css" rel="stylesheet">
-		<link href="css/grayscale.css" rel="stylesheet">
-		<link href="css/jquery-ui.min.css" rel="stylesheet">
-		<link href="css/tppdebug.css" rel="stylesheet"><?php
+		<link href="../css/font-awesome.min.css" rel="stylesheet">
+		<link href="../css/grayscale.css" rel="stylesheet">
+		<link href="../css/jquery-ui.min.css" rel="stylesheet">
+		<link href="../css/tppdebug.css" rel="stylesheet"><?php
 		} else { ?>
 
-		<link href="css/minified.css" rel="stylesheet"><?php
+		<link href="../css/minified.css" rel="stylesheet"><?php
 		} ?>
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->

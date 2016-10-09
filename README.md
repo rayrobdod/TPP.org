@@ -25,6 +25,7 @@ For demo purposes, I'll be using a directory named `red`, located at `/var/www/t
             "TPP_CACHE_KEY" => "cachekey",          // Cache key which can be used to refresh the contents, if caching is enabled
         ];
 
+85. Obtains [Composer](https://getcomposer.org/)
 9. Make `update.sh` executable: `chmod +x update.sh`
 10. Run `./update.sh`
 11. `update.sh` will `git pull`, `composer install -o`, and `vendor/bin/phinx migrate`
