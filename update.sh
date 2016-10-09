@@ -45,7 +45,7 @@ echoUpdate "git pull"
 #git pull
 #echo
 
-echoUpdate "composer install -o"
+echoUpdate "php composer.phar install -o"
 #composer install -o
 #echo
 
